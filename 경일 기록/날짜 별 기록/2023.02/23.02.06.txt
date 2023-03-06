@@ -1,0 +1,152 @@
+공지사항
+ - 필드타입 이미지를 심플타입 이미지랑 비교할 예정
+ - 코루틴 개념 진도 나갈 예정
+
+
+
+
+
+
+플레이어 HP 구현
+Fill amount 0~1 사이 값(float)
+플레이어 HP 253 중에 현재 HP 180 남음
+
+* 점심 먹고나서 게임 알고리즘, 모바일 게임 기획 능력단위 평가 진행 후 (약 30분 예정)
+	Antbuster 프로젝트 셋업 -> 깃 리포지토리, ReadMe, Ignore 까지 진행을 팀장이 점검. (약 20분 예정)
+
+
+
+
+
+* 토이 프로젝트 Ant Buster	/ 02.09 목요일 점심 전까지 제출
+	- 에셋은 팀별로 통일 (R&D 팀끼리. 팀간 교류도 가능. 필요하다면 스터디 등 진행)
+	- ReadMe 파일에 무슨 타워를 몇 개를 구현했는지. 총 몇 개의 타워를 구현했는지 적어줄 것.
+	- 가로모드 해상도 4:3
+	- PC 빌드 -> 빌드까지 진행
+	- 제출할 예정
+	- 오전에 일러주었던 개발일지 작성도 연습하면 좋음
+	- 깃허브도 연습하면 좋음. 중간중간 롤백 포인트 푸쉬 해 둘 것.
+	- (쉬운 난이도) 개미가 정직하게 케이크를 가져감.
+	- (어려움 난이도) 개미의 모든 것.
+
+
+게임 불륨 정도?
+
+프로토타입이 먼저 완성된 이후부터 폴리싱 작업을 들어가야 좋다.
+
+(ANTBUSTER) 개미타워디펜스
+https://zonzaemgame.com/bbs/board.php?bo_table=game_def&wr_id=314
+
+타이틀
+- Play Game 플레이게임 버튼
+- How to Play 튜토리얼 버튼
+- Play More Games 타 게임을 즐길 수 있는 링크 버튼
+
+언어 선택 버튼
+
+
+인게임
+- 개미가 케이크를 집어 올리면 체력이 회복됨
+- 포탑은 3가지 종류로 업그레이드 가능
+- 가로 25칸 세로 20칸
+- 포탑의 공격 투사체 속도 보다 개미의 이동속도가 더 빠름
+- 게임오버 씬은 CAKE OVER 가 뜨고 Total Point가 팝업됨
+- 인게임 UI에서는 현재 Point 와 현재 Money와 현재 Level 이 표시됨
+- 인게임 UI에서는 음악설정과 포탑 설치 메뉴가 있음
+- 인게임 UI에서는 일시정지버튼
+- 일시정지버튼에서는 계속하기와 현재 게임을 종료하는 버튼이 있음
+- 목숨은 8개
+- 개미를 처치한 수에 따라서 Level 상승
+- 개미 처치시 처치한 개미의 레벨 표시!
+
+
+
+- 포탑을 누르면 업그레이드가 가능하며 상세 정보가 팝업됨
+
+	포탑 스펙 UI
+ - 공격 속도
+Shot / Sec
+
+ - 투사체  속도
+Speed
+
+ - 사거리
+Range
+
+- 기본 데미지
+Basic Damage
+
+
+현재 가격의 1/2 만큼 상승
+포탑 1번째가격 30 => 15
+포탑 2번째가격 45 => 22
+포탑 3번째가격 67 => 33
+포탑 4번째가격 100 => 50
+포탑 5번째가격 150
+
+
+	개미 스팩
+
+- 개미를 클릭하면 포커싱 기능이있음
+- 케이크를 들면 Speed가 1 inch/sec 로 느려짐, 체력의 1/2 을 회복함
+Level 1 개미 스펙
+Energy : 4
+Speed : 1 inch/sec
+
+Level 2 개미 스펙
+Energy : 4
+Speed : 1.2 inch/sec
+
+Level 3 개미 스펙
+Energy : 5
+Speed : 1.2 inch/sec
+
+Level 4
+Energy : 5
+Speed : 1.2 inch/sec
+
+Level 5 
+Energy : 6
+Speed : 1.2 inch/sec
+
+Level 6
+Energy : 7
+Speed : 1.2 inch/sec
+
+Level 7
+Energy : 7
+Speed : 1.2 inch/sec
+
+Level 8
+Energy : 8
+Speed : 1.2 inch/sec
+
+Level 9
+Energy : 9
+Speed : 1.2 inch/sec
+
+Level 10		// 10레벨이상 부터는 랜덤으로 한번 등장함
+Energy : 10
+Speed : 1.2 inch/sec
+
+Level 11
+Energy : 11
+Speed : 1.2 inch/sec
+
+Level 12
+Energy : 12
+Speed : 1.2 inch/sec
+
+
+AntBuster 개발 내용 정리
+왼쪽 위를 스타트 지점으로 설정
+왼쪽 아래를 엔드 지접으로 설정
+맵 크기는 1250, -740
+
+Start 기준 한칸당 x 50 y 37
+
+
+
+
+
+
